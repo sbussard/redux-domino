@@ -4,7 +4,7 @@ You could easily write this yourself, but you don't have to.
 
 ## async example
 `myHandlers.js`
-```
+```es6
 let doSomeAsyncThing = () => new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve('async task complete!')
@@ -32,7 +32,7 @@ export default rootHandler;
 ```
 
 `configureStore.js`
-```
+```es6
 import createHandlerMiddleware from 'redux-domino';
 import rootHandler from './myHandlers';
 
