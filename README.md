@@ -7,14 +7,14 @@ You could easily write this yourself, but you don't have to.
 ```es6
 let doSomeAsyncThing = () => new Promise((resolve, reject) => {
   setTimeout(() => {
-    resolve('async task complete!')
+    resolve('async task complete!');
   }, 3000);
 });
 
 let rootHandler = async (action, store) => {
   let { dispatch } = store;
 
-  switch(action.type) {
+  switch (action.type) {
     case 'ASYNC_REQUEST':
       console.log('request initialized...');
       let result = await doSomeAsyncThing();
@@ -23,7 +23,7 @@ let rootHandler = async (action, store) => {
     case 'ASYNC_SUCCESS':
       console.log(action.payload);
       break;
-    case default:
+    default:
       break;
   }
 };
