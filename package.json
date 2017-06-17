@@ -1,0 +1,36 @@
+{
+  "name": "redux-domino",
+  "version": "0.1.0",
+  "description": "call functions when redux actions are dispatched",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src/index.js | uglifyjs -c -m -o lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sbussard/redux-domino.git"
+  },
+  "keywords": [
+    "redux",
+    "action",
+    "reducer",
+    "async",
+    "await",
+    "handler",
+    "listener"
+  ],
+  "author": "Stephen Bussard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sbussard/redux-domino/issues"
+  },
+  "homepage": "https://github.com/sbussard/redux-domino#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "jest": "^20.0.4",
+    "uglify-js": "^3.0.17"
+  }
+}
