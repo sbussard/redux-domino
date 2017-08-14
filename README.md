@@ -1,4 +1,6 @@
 # redux-domino
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/sbussard/redux-domino.svg)](https://greenkeeper.io/)
 An intuitive way to handle async control flow with redux.  
 You could easily write this yourself, but you don't have to.
 
